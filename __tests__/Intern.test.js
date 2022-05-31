@@ -11,5 +11,12 @@ test('inherit from Employee', ()=> {
 test('check school property', ()=> {
    const intern = new Intern('Dave', 2, 'costa@fakemail', 'UMD');
 
-   expect(intern.school).toEqual(expect.stringContaining('UMD'));
+   expect(intern.school).toBe(('UMD'));
 });
+
+test('check getSchool() method', ()=> {
+   const intern = new Intern('Dave', 2, 'costa@fakemail', 'UMD');
+
+   expect(intern.getSchool()).toEqual(expect.stringContaining('UMD'));
+});
+
