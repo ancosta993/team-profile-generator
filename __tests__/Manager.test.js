@@ -4,6 +4,8 @@ test("inherit properties from Employee", ()=>{
    const manager = new Manager('Dave', 2, 'costa@fakemail');
 
    expect(manager.name).toBe('Dave');
+   expect(manager.id).toBe(2);
+   expect(manager.email).toBe('costa@fakemail');
 });
 
 test("set officeNumber property", ()=>{
