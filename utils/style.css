@@ -1,0 +1,63 @@
+*{
+   box-sizing:border-box;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   margin:0;
+   padding:0;
+}
+
+
+
+.page-title{
+   margin:0;
+   padding:3rem;
+}
+
+.jumbotron {
+   background-color: rgb(255,67,115);
+   color:white;
+   text-align: center;
+   height:8rem;
+}
+
+.card-container{
+   margin-top: 1rem;
+   display:flex;
+   flex-direction: row;
+   flex-wrap:wrap;
+   justify-content:center;
+   gap: 2rem;
+}
+
+.card{
+   box-shadow:5px 10px 21px rgb(24 19 19 / 83%);
+   border-radius:5px;
+}
+
+.card-title{
+   font-size: 1.3rem;
+   padding: 1rem 0rem 1rem 2rem;
+   background-color:rgb(86 103 231);
+   color:white;
+   border-top-right-radius: 5px;
+   border-top-left-radius:5px;
+}
+
+.card-content{
+   background-color: rgb(133 134 141 / 3%);
+}
+
+.list-group{
+   background-color: rgb(255,255,255);
+   list-style-type: none;
+   padding:1rem 1rem 2rem 1rem;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+}
+
+.list-group li {
+   padding:.5rem .5rem .8rem .5rem;
+   border:1px solid lightgray;
+   margin: 0 .8rem 0 .8rem;
+   font-size: 1.1rem;
+}
