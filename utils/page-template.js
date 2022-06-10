@@ -2,13 +2,15 @@ const Input = require('../lib/Input.js');
 
 // defining the function to create the employee cards
 const generateCards = (arrOfObj)=> {
-   cardsArr = arrOfObj.map(function({name, id, email, ...rest}, index)  {
+   cardsArr = arrOfObj.map(function({name, id, email, iconLink, ...rest}, index)  {
       return`
 
          <section class="card">
                <div class="card-title">
                   <h3>${name}</h3>
-                  <p>${arrOfObj[index].getRole()}</p>
+                  <p> <img src="${iconLink}" alt="icon" style ="position:relative;
+                  top:8px;"
+              }> ${arrOfObj[index].getRole()}</p>
                </div>
                
                <div class="card-content">
@@ -27,7 +29,7 @@ const generateCards = (arrOfObj)=> {
 
 const checkEngineer = (rest, str) => {
    if(str === 'Engineer'){
-      return `<li>${Object.keys(rest)[0]}: <a href="https://en.wikipedia.org/wiki/Main_Page" target="_blank">${Object.values(rest)[0]}</a></li>`
+      return `<li>${Object.keys(rest)[0]}: <a href="https://github.com/${Object.values(rest)[0]}" target="_blank">${Object.values(rest)[0]}</a></li>`
    } else {
       return `<li>${Object.keys(rest)[0]}: ${Object.values(rest)[0]}</li>`
    };
