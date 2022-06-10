@@ -36,6 +36,6 @@ test("set officeNumber property", ()=>{
    const manager = new Manager('Dave', 2, 'costa@fakemail', 118);
 
 
-   expect(manager.officeNumber).toBe(118);
+   expect(manager.Office).toBe(118);
 });
 

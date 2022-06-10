@@ -41,7 +41,7 @@ test('getRole returns the Role', ()=>{
 });
 
 test('check for getGitHub() in engineer', ()=>{
-   const engineer = new Engineer('Dave',2,'email@email.com','ancosta993');
 
-   expect(engineer.getGitHub()).toEqual(expect.stringContaining(engineer.gitHub));
-})
+   const engineer = new Engineer('Dave',2,'email@email.com','ancosta993');
+   expect(engineer.getGitHub()).toEqual(expect.stringContaining(engineer.GitHub));
+});

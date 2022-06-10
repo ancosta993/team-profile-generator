@@ -11,7 +11,7 @@ test('inherit from Intern', ()=> {
 test('check school property', ()=> {
    const intern = new Intern('Dave', 2, 'costa@fakemail', 'UMD');
 
-   expect(intern.school).toBe(('UMD'));
+   expect(intern.School).toBe(('UMD'));
 });
 
 test('getName returns the name', ()=>{
